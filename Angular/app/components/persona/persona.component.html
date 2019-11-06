@@ -1,0 +1,12 @@
+<!-- *ngIf="persona" -->
+<div class="container mt-5">
+    <h1>Usuario</h1>
+    <div class="card mb-3" *ngIf="persona">
+        <img class="card-img-top" src="assets/banerPaisajeTres.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ persona.nombre }} {{ persona.apellido }}</h5>
+            <p class="card-text"><small class="text-muted">{{ persona.correo }}</small></p>
+            <p class="card-text">{{ persona.bio }}</p>
+        </div>
+    </div>
+</div>

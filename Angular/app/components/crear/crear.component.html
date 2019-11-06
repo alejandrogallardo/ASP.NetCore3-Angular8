@@ -1,0 +1,42 @@
+<div class="container">
+    <h2 class="text-center">Crear Nuevo</h2>
+    <div class="card">
+        <div class="card-body">
+            <form (ngSubmit)="guardar( forma )" #forma="ngForm">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre</label>
+                    <input  type="text" 
+                            class="form-control" 
+                            placeholder="Agregar nombre"
+                            name="nombre"
+                            [(ngModel)]="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Apellido</label>
+                    <input  type="text" 
+                            class="form-control" 
+                            placeholder="Agregar apellido"
+                            name="apellido"
+                            [(ngModel)]="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Correo</label>
+                    <input  type="email" 
+                            class="form-control" 
+                            placeholder="Agregar correo"
+                            name="correo"
+                            [(ngModel)]="correo">
+                </div>
+                <div class="form-group">
+                    <label>Biografía</label>
+                    <textarea   class="form-control" 
+                                rows="3"
+                                name="bio"
+                                [(ngModel)]="bio"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <!-- <button (click)="updateUser()"  class="btn btn-success">Submit</button> -->
+            </form>
+        </div>
+    </div>
+</div>
